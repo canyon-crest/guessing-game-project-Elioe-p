@@ -3,16 +3,22 @@
   <head>
     <title>JavaScript Number Guessing Game</title>
     <script src="script.js" defer></script>
+    <script src="effects.js" defer></script>
   </head>
   <body>
     <p id="date"></p>
+    <p id="display">0</p>
+    <p>Time: <span id="display">0</span> seconds</p>
+    <h3 id="nm">Enter Your Name</h3>
+    <input type="text" id="nameEntered">
+    <button id="nameBtn">Enter</button>
 
     <h3>Level</h3>
     <input type="radio" name="level" id="e" value="3" checked><label for="e">Easy</label>
     <input type="radio" name="level" id="m" value="10"><label for="m">Medium</label>
     <input type="radio" name="level" id="h" value="100"><label for="h">Hard</label>
 
-    <button id="playBtn">Play</button>
+    <button id="playBtn" disabled>Play</button>
 
     <h3 id="msg">Select a Level</h3>
     <input type="text" id="guess" disabled>
@@ -22,6 +28,7 @@
     <h3>Stats</h3>
     <p id="wins">Total wins: 0</p>
     <p id="avgScore">Average Score: </p>
+    <p id="scoreJudge"></p>
 
     <h3>Leaderboard</h3>
     <ol>
